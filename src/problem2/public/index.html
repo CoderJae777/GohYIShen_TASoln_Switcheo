@@ -1,24 +1,31 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <title>Jae's Token Exchange</title>
 
   <!-- You may add more stuff here -->
-  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css"  />
 </head>
 
 <body>
   <div id="root"></div>
-
   <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
   <form onsubmit="return !1">
-    <label for="input-amount">Amount to send</label>
+    <div id="input">
+    <label id = "input-text" for="input-amount">Amount to send</label>
     <input id="input-amount" />
-
-    <label for="output-amount">Amount to receive</label>
+    </div>
+    
+    <div id="output">
+    <label id="output-text" for="output-amount">Amount to receive</label>
     <input id="output-amount" />
+    </div>
 
-    <button>CONFIRM SWAP</button>
+    <div id="button">
+    <button id="swap-button">Confirm Swap</button>
+    </div>
+    
   </form>
   <script src="script.js"></script>
 </body>
