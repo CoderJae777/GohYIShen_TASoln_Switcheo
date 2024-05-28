@@ -1,28 +1,28 @@
 import {useEffect, useState} from "react";
 import TokenPriceList from "./TokenListPrice";
+import useFetch from "./useFetch"; 
+import Create from "./Create";
 
 const Home = () => {
-    const [tokenPrice, setTokenPrice] = useState([]);
+    const {tokenPrice} = useFetch();
 
-  
-    useEffect(()=>{
-        fetch('http://localhost:8000/tokenPrice')
-          .then(res => {
-            return res.json();
-          })
-          .then(data => {
-            setTokenPrice(data);
-          })
-      }); 
+    const exchangeHandler = () => {
+      alert("Done!")
+    }
     
     return ( 
         <div className="home">
             <div className="Token">
-              <h1>Token Calculator</h1>
-                {/* <TokenPriceList tokenPrice = {tokenPrice} title = "Token Prices"/> */}
+              <h1>Token Exchange</h1>
+                {/* Dropdown here(?) */}
+                <Create/>
+                <button id="exchangebutton" onClick={exchangeHandler}>Exchange!</button>
+                <TokenPriceList tokenPrice = {tokenPrice} title = "Token Prices"/>
+
             </div>
         </div>
      );
+
 }
  
 export default Home;

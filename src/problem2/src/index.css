@@ -13,19 +13,19 @@ code {
 }
 
 .token-price-preview{
-  padding: 5px 5px;
-  margin: 5px 0;
-  border-bottom: 1px solid #fafafa;
+  padding: 2px 2px;
+  display: flex; 
+  justify-content: left; 
+  align-items: center; 
 }
 
-.token-price-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+#currency{
+  margin-left: 20;
+  margin-right: 20;
 }
 
-.token-price-list h1 {
-  font-size: 10px;
-  color: #FF0080;
-  margin-bottom: 2px;
+#date{
+  margin-left: 20;
 }
 
 .navbar {
@@ -48,8 +48,8 @@ code {
   padding: 6px;
 }
 .navbar button:hover {
-  background-color: #FFFAE6;
-  color: black;
+  background-color: #EE99C2;
+  color: #FFFFFF;
 }
 
 .navbar button {
@@ -58,7 +58,6 @@ code {
   border-style: none;
   box-sizing: border-box;
   color: #FFFFFF;
-  cursor: pointer;
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -66,18 +65,12 @@ code {
   font-weight: 500;
   height: 40px;
   line-height: 20px;
-  list-style: none;
   margin: 10px;
-  outline: none;
   padding: 10px 16px;
   position: relative;
   text-align: center;
-  text-decoration: none;
   transition: color 100ms;
   vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
 }
 
 
@@ -86,4 +79,68 @@ code {
   color: #FF0080;
   margin-bottom: 40px;
   align-items: center;
+}
+
+#exchangebutton:hover {
+  background-color: #A3C9AA;
+  color: black;
+}
+
+#exchangebutton {
+  background-color: #A1DD70;
+  border-radius: 100px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #000000;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  margin: 10px;
+  margin-bottom: 40px;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+}
+
+#button {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
