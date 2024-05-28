@@ -7,7 +7,7 @@ const Home = () => {
     const {tokenPrice} = useFetch();
 
     const exchangeHandler = () => {
-      alert("Done!")
+      alert("Exchanged Succesful!")
     }
     
     return ( 

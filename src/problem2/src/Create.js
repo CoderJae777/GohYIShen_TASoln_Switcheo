@@ -20,7 +20,7 @@ const Create = () => {
             <div>
                 <p id="sell-output">{sell}</p>
                 <img src={arrow_image} alt="Arrow Image"></img>
-                <p id="buy-output">{buy}</p>
+                <p id="buy-outpu">{buy}</p>
             </div>
 
             <label>Buy</label>
