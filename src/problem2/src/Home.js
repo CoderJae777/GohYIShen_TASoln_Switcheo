@@ -4,9 +4,7 @@ import TokenPriceList from "./TokenListPrice";
 const Home = () => {
     const [tokenPrice, setTokenPrice] = useState([]);
 
-    const handleClickTokenPrice = () => {
-      <TokenPriceList tokenPrice = {tokenPrice} title = "Token Prices"/>
-    }
+  
     useEffect(()=>{
         fetch('http://localhost:8000/tokenPrice')
           .then(res => {
