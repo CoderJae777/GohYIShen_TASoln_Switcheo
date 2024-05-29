@@ -37,7 +37,7 @@ code {
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #FF0080;
+  color: #248e38;
 }
 .navbar .links {
   margin-left: auto;
@@ -48,12 +48,12 @@ code {
   padding: 6px;
 }
 .navbar button:hover {
-  background-color: #EE99C2;
+  background-color: #abdca7;
   color: #FFFFFF;
 }
 
 .navbar button {
-  background-color: #FF0080;
+  background-color: #248e38;
   border-radius: 100px;
   border-style: none;
   box-sizing: border-box;
@@ -76,7 +76,7 @@ code {
 
 .token h1 {
   font-size: 30px;
-  color: #FF0080;
+  color: #248e38;
   margin-bottom: 40px;
   align-items: center;
 }

@@ -1,21 +1,41 @@
 import {useEffect, useState} from "react";
+import arrow_image from "./arrow.png";
+
 
 const TokenPriceList = (props) => {
 
+    const [sell, setSell] = useState('--Sell--');
+    const [buy, setBuy] = useState('--Buy--');
     const tokenPrice = props.tokenPrice;
     const title = props.title;
+    const tokens = tokenPrice.map((tokens)=>
+        <option>{tokens.currency} (USD {tokens.price})</option>
+        
+    )
 
-    return ( 
+    return (         
+        <>
+        
+        <label>Sell</label>
+        <select value={sell} onChange={(e) => setSell(e.target.value)}>
+            {tokens}
+        </select>
+
+        <img src={arrow_image} alt="Arrow Image"></img>
+        
+        <label>Buy</label>
+        <select value={buy} onChange={(e) => setBuy(e.target.value)}>
+            {tokens}
+        </select>
+        
         <div>
-            <h1>{title}</h1>
-            {tokenPrice.map((tokens)=>(
-            <div className="token-price-preview">
-                <p id="currency">Currency : {tokens.currency}</p>
-                <p id="price">Price : {tokens.price}</p>
-                <p id="date"> Date : {tokens.date}</p>
-            </div>
-        ))}
+        <p id="sell-output">{sell}</p>
+        <p> to </p>
+        <p id="buy-output">{buy}</p>
         </div>
+        
+        </>
+
     );
 }
 
