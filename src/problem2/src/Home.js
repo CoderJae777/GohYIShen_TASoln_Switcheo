@@ -5,6 +5,8 @@ import Create from "./Create";
 
 const Home = () => {
     const {tokenPrice} = useFetch();
+    const [sell, setSell] = useState('ETH');
+    const [buy, setBuy] = useState('USD');
 
     const exchangeHandler = () => {
       alert("Exchanged Succesful!")
@@ -17,7 +19,7 @@ const Home = () => {
                 {/* Dropdown here(?) */}
                 <Create/>
                 <button id="exchangebutton" onClick={exchangeHandler}>Exchange!</button>
-                <TokenPriceList tokenPrice = {tokenPrice} title = "Token Prices"/>
+                {/* <TokenPriceList tokenPrice = {tokenPrice}/> */}
 
             </div>
         </div>
