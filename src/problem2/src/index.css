@@ -31,7 +31,7 @@ code {
 
 #sell-select{
   inline-size: 100%;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bold;
   padding: 0.675em 6em 0.675em 1em;
   background-color: #fff;
@@ -48,7 +48,7 @@ code {
 
 #buy-select{
   inline-size: 100%;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bold;
   padding: 0.675em 6em 0.675em 1em;
   background-color: #fff;
@@ -63,19 +63,11 @@ code {
   sans-serif; 
 }
 
-#sell-label {
-  font-size: 30px;
-  color: #EE4E4E;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif; 
-  font-weight: bold;
-}
 
 #sell-all {
   background-color: #EEEEEE;
   padding: 50px;
-  border-radius: 50px;
+  border-radius: 25px;
   max-width: 500px;
   align-content: center;
   align-self: center;
@@ -85,17 +77,26 @@ code {
 #buy-all {
   background-color: #EEEEEE;
   padding: 50px;
-  border-radius: 50px;
+  border-radius: 25px;
   margin-top: 20px;
   max-width: 500px;
   align-content: center;
   align-self: center;
   margin: auto;
-  margin-top: 20;
+  margin-top: 10px;
+}
+
+#sell-label {
+  font-size: 35px;
+  color: #EE4E4E;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; 
+  font-weight: bold;
 }
 
 #buy-label {
-  font-size: 30px;
+  font-size: 35px;
   color: #248e38;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -104,7 +105,7 @@ code {
 }
 
 #exchange-confirmation{
-  font-size: 30px;
+  font-size: 35px;
   color: #686D76;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -123,7 +124,7 @@ code {
   align-content: center;
   align-self: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .token h1 {
@@ -158,49 +159,38 @@ code {
   border-bottom: 1px solid #f2f2f2;
   background-color: #EEEEEE;
   border-radius: 25px;
-  border-style: double;
+  border-style: solid;
   border-color: white;
   border-width: 5px;
 }
 .navbar h1 {
   color: #003285;
+  font-size: 30px;
   margin-right: 20px;
 }
-.navbar .links {
-  margin-left: auto;
-}
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
+
 .navbar button:hover {
-  background-color: #abdca7;
-  color: #FFFFFF;
+  background-color: #CAF4FF;
+  color: black;
 }
 
 .navbar button {
-  width: 120px;
+  width: 170px;
   background-color: #2A629A;
   border-radius: 100px;
-  border-style: none;
-  box-sizing: border-box;
+  border-style:double;
+  border-color: black;
   color: #FFFFFF;
-  display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
+    sans-serif;  
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
   margin: 10px;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
+  padding: 10px;
   transition: color 100ms;
-  vertical-align: baseline;
 }
-
 
 #exchangebutton:hover {
   background-color: #A3C9AA;
@@ -210,16 +200,18 @@ code {
 #exchangebutton {
   background-color: #248e38;
   border-radius: 100px;
-  border-style: none;
+  border-style: solid;
+  border-color: black ;
+  border-width: 5px;
   box-sizing: border-box;
   color: white;
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;  
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
-  height: 50px;
+  height: 100px;
   width: 450px;
   line-height: 20px;
   margin: 10px;
@@ -237,6 +229,37 @@ code {
   align-items: center; 
 }
 
+#viewtokendeetsh1 {
+  font-size: 30px;
+  color: #003285;
+  margin-bottom: 40px;
+  align-items: center;
+}
 
+#viewtokendeetsdiv {
+  background-color:#EEEEEE ;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: black;
+  align-content: center;
+  margin: auto;
+  margin-bottom: 20px ;
+  max-width: 300px;
 
+}
+
+#viewtokendeetstoken {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#viewtokendeetsprice{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#viewtokendeetsdate{
+  font-size: 20px;
+  font-weight: bold;
+}
 
