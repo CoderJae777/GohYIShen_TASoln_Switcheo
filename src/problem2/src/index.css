@@ -76,6 +76,10 @@ code {
   background-color: #EEEEEE;
   padding: 50px;
   border-radius: 50px;
+  max-width: 500px;
+  align-content: center;
+  align-self: center;
+  margin: auto;
 }
 
 #buy-all {
@@ -83,6 +87,11 @@ code {
   padding: 50px;
   border-radius: 50px;
   margin-top: 20px;
+  max-width: 500px;
+  align-content: center;
+  align-self: center;
+  margin: auto;
+  margin-top: 20;
 }
 
 #buy-label {
@@ -101,19 +110,25 @@ code {
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif; 
   font-weight: bold;
+
 }
 
 #transaction {
   background-color: #EEEEEE;
-  padding: 25px;
+  font-size: 25px;
+  padding: 50px;
   border-radius: 50px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 500px;
+  align-content: center;
+  align-self: center;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .token h1 {
   font-size: 30px;
-  color: #344C64;
+  color: #003285;
   margin-bottom: 40px;
   align-items: center;
 }
@@ -138,12 +153,17 @@ code {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  background-color: #EEEEEE;
+  border-radius: 25px;
+  border-style: double;
+  border-color: white;
+  border-width: 5px;
 }
 .navbar h1 {
-  color: #344C64;
+  color: #003285;
   margin-right: 20px;
 }
 .navbar .links {
@@ -161,7 +181,7 @@ code {
 
 .navbar button {
   width: 120px;
-  background-color: #57A6A1;
+  background-color: #2A629A;
   border-radius: 100px;
   border-style: none;
   box-sizing: border-box;
@@ -196,10 +216,11 @@ code {
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;  font-size: 14px;
-  font-weight: 500;
+    sans-serif;  
+  font-size: 25px;
+  font-weight: bold;
   height: 50px;
-  width: 350px;
+  width: 450px;
   line-height: 20px;
   margin: 10px;
   margin-bottom: 40px;
@@ -216,24 +237,6 @@ code {
   align-items: center; 
 }
 
-.create {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
 
-.create label {
-  text-align: center;
-  display: block;
-}
-
-.create input, .create textarea, .create select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
 
 

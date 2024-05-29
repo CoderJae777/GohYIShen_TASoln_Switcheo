@@ -1,14 +1,14 @@
 import {useEffect, useState} from "react";
 import arrow_image from "./arrow.png";
-
+import useFetch from "./useFetch";
 
 const TokenPriceList = (props) => {
 
+    const {tokenPrice} = useFetch();
     const [sell, setSell] = useState('--Selling--');
     const [buy, setBuy] = useState('--Buying--');
     const [sellPrice, setSellPrice] = useState('- USD 0');
     const [buyPrice, setBuyPrice] = useState('+ USD 0');
-    const tokenPrice = props.tokenPrice;
     const tokens = tokenPrice.map((tokens)=>
         <>
         <option>        
