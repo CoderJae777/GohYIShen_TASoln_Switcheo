@@ -7,7 +7,6 @@ const TokenPriceList = (props) => {
     const [sell, setSell] = useState('--Sell--');
     const [buy, setBuy] = useState('--Buy--');
     const tokenPrice = props.tokenPrice;
-    const title = props.title;
     const tokens = tokenPrice.map((tokens)=>
         <>
         <option>        
@@ -32,7 +31,7 @@ const TokenPriceList = (props) => {
             {tokens}
         </select>
         
-        <div>
+        <div id="buy-sell-output">
         <p id="sell-output">{sell}</p>
         <p id="buy-output">{buy}</p>
         </div>
