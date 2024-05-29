@@ -12,13 +12,31 @@ code {
     monospace;
 }
 
+#sellPrice{
+  color: #EE4E4E
+}
+
+#buyPrice{
+  color:#248e38
+}
+#sell-output{
+  font-weight: bold;
+  color: #EE4E4E;
+}
+
+#buy-output{
+  font-weight: bold;
+  color: #248e38;
+}
+
 #sell-select{
   inline-size: 100%;
   font-size: 15px;
+  font-weight: bold;
   padding: 0.675em 6em 0.675em 1em;
   background-color: #fff;
   border: 3px solid #caced1;
-  border-color: #248e38;
+  border-color: #EE4E4E;
   border-radius: 50px;
   color: #000;
   cursor: pointer;
@@ -31,6 +49,7 @@ code {
 #buy-select{
   inline-size: 100%;
   font-size: 15px;
+  font-weight: bold;
   padding: 0.675em 6em 0.675em 1em;
   background-color: #fff;
   border: 3px solid #caced1;
@@ -46,29 +65,55 @@ code {
 
 #sell-label {
   font-size: 30px;
-  color: red;
+  color: #EE4E4E;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif; 
   font-weight: bold;
+}
+
+#sell-all {
+  background-color: #EEEEEE;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+#buy-all {
+  background-color: #EEEEEE;
+  padding: 50px;
+  border-radius: 50px;
+  margin-top: 20px;
 }
 
 #buy-label {
   font-size: 30px;
-  color: green;
+  color: #248e38;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif; 
   font-weight: bold;
 }
 
-#buy-sell-output{
-  
+#exchange-confirmation{
+  font-size: 30px;
+  color: #686D76;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; 
+  font-weight: bold;
+}
+
+#transaction {
+  background-color: #EEEEEE;
+  padding: 25px;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .token h1 {
   font-size: 30px;
-  color: #248e38;
+  color: #344C64;
   margin-bottom: 40px;
   align-items: center;
 }
@@ -76,7 +121,7 @@ code {
 .token-price-preview{
   padding: 2px 2px;
   display: flex; 
-  justify-content: left; 
+  justify-content: center; 
   align-items: center; 
 }
 
@@ -98,7 +143,7 @@ code {
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #248e38;
+  color: #344C64;
   margin-right: 20px;
 }
 .navbar .links {
@@ -115,7 +160,8 @@ code {
 }
 
 .navbar button {
-  background-color: #248e38;
+  width: 120px;
+  background-color: #57A6A1;
   border-radius: 100px;
   border-style: none;
   box-sizing: border-box;
@@ -152,7 +198,8 @@ code {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;  font-size: 14px;
   font-weight: 500;
-  height: 40px;
+  height: 50px;
+  width: 350px;
   line-height: 20px;
   margin: 10px;
   margin-bottom: 40px;
@@ -176,7 +223,7 @@ code {
 }
 
 .create label {
-  text-align: left;
+  text-align: center;
   display: block;
 }
 
