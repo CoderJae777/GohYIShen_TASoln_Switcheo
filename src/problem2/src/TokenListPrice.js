@@ -16,15 +16,15 @@ const TokenPriceList = (props) => {
     return (         
         <>
         
-        <label>Sell</label>
-        <select value={sell} onChange={(e) => setSell(e.target.value)}>
+        <label id="sell-label">Sell</label>
+        <select id="sell-select" value={sell} onChange={(e) => setSell(e.target.value)}>
             {tokens}
         </select>
 
         <img src={arrow_image} alt="Arrow Image"></img>
         
-        <label>Buy</label>
-        <select value={buy} onChange={(e) => setBuy(e.target.value)}>
+        <label id="buy-label">Buy</label>
+        <select id="buy-select" value={buy} onChange={(e) => setBuy(e.target.value)}>
             {tokens}
         </select>
         

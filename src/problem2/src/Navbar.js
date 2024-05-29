@@ -21,7 +21,7 @@ const Navbar = () => {
         <h1>Jae's Token Exchange</h1>
         <div className="links">
           <button onClick={handleClickAboutMe}>About me</button>
-          <button onClick={handleClickTokenPrice}>View Token Price</button>
+          <button onClick={handleClickTokenPrice}>View Token Details</button>
         </div>
       </nav>
     );
