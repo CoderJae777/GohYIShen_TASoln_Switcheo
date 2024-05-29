@@ -9,7 +9,11 @@ const TokenPriceList = (props) => {
     const tokenPrice = props.tokenPrice;
     const title = props.title;
     const tokens = tokenPrice.map((tokens)=>
-        <option>{tokens.currency} (USD {tokens.price})</option>
+        <>
+        <option>        
+        {tokens.currency} (USD {tokens.price}) 
+        </option>
+        </>
         
     )
 
@@ -30,7 +34,6 @@ const TokenPriceList = (props) => {
         
         <div>
         <p id="sell-output">{sell}</p>
-        <p> to </p>
         <p id="buy-output">{buy}</p>
         </div>
         

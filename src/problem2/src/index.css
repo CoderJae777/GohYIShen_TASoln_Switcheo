@@ -18,6 +18,7 @@ code {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif; 
+  font-weight: bold;
 }
 
 #sell-label {
@@ -26,6 +27,7 @@ code {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif; 
+  font-weight: bold;
 }
 
 .token-price-preview{
@@ -100,15 +102,15 @@ code {
 
 #exchangebutton:hover {
   background-color: #A3C9AA;
-  color: black;
+  color: white;
 }
 
 #exchangebutton {
-  background-color: #A1DD70;
+  background-color: #248e38;
   border-radius: 100px;
   border-style: none;
   box-sizing: border-box;
-  color: #000000;
+  color: white;
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -169,10 +171,13 @@ code {
   background-color: #fff;
   border: 3px solid #caced1;
   border-color: #248e38;
-  border-radius: 1px;
+  border-radius: 50px;
   color: #000;
   cursor: pointer;
   margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; 
 }
 
 #buy-select{
@@ -182,7 +187,11 @@ code {
   background-color: #fff;
   border: 3px solid #caced1;
   border-color: #248e38;
-  border-radius: 1px;
+  border-radius: 50px;
   color: #000;
   cursor: pointer;
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; 
 }
