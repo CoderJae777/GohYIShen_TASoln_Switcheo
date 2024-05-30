@@ -6,9 +6,9 @@ const ViewTokenDetails = () => {
     const tokens = tokenPrice.map((tokens)=>
         <>
         <div id="viewtokendeetsdiv">
-        <p id="viewtokendeetstoken">{tokens.currency}</p>
-        <p id="viewtokendeetsprice">USD {tokens.price}</p>
-        <p id="viewtokendeetsdate">{tokens.date}</p>
+            <p id="viewtokendeetstoken">{tokens.currency}</p>
+            <p id="viewtokendeetsprice">USD {tokens.price}</p>
+            <p id="viewtokendeetsdate">{tokens.date}</p>
         </div>
         </>    
     )

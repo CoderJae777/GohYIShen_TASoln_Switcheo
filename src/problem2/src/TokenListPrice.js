@@ -21,49 +21,45 @@ const TokenPriceList = (props) => {
         
     return (         
         <>
-        
-        <div id="sell-all">
-        <label id="sell-label">Sell</label>
-        <select id="sell-select" value={sell} onChange={(e) => setSell(e.target.value)}>
-            {tokens}
-        </select>
-        <input id="typesellamount"
-            type = 'text'
-            required
-            value={sellAmount}
-            onChange={(e)=> setSellAmount(e.target.value)}
-        />
-      
-        </div>
-        
-        <div id="buy-all">
-        <label id="buy-label">Buy</label>
-        <select id="buy-select" value={buy} onChange={(e) => setBuy(e.target.value)}>
-            {tokens}
-        </select>
-        <input id="typebuyamount"
-            type = 'text'
-            required
-            value={buyAmount}
-            onChange={(e)=> setBuyAmount(e.target.value)}
+        <div id="curr-exchange-form">
+            <div id="sell-all">
+                <label id="sell-label">Sell</label>
+                <select id="sell-select" value={sell} onChange={(e) => setSell(e.target.value)}>
+                    {tokens}
+                </select>
+                <input id="typesellamount"
+                    type = 'text'
+                    required
+                    value={sellAmount}
+                    onChange={(e)=> setSellAmount(e.target.value)}
+                />
+            </div>  
 
-        />
+            <div id="transaction">
+                <label id="exchange-confirmation">Confirmation</label>
+                <p id="sell-output">{sell}</p>
+                {/* <p id="sellPrice">{sellPrice}</p> */}
+                <p id="sellPrice">{sellAmount}</p>
+                <img src={arrow_image} alt="Arrow Image"></img>
+                <p id="buy-output">{buy}</p>
+                {/* <p id="buyPrice">{buyPrice}</p> */}
+                <p id="buyPrice">{buyAmount}</p>
+            </div>
 
+            <div id="buy-all">
+                <label id="buy-label">Buy</label>
+                <select id="buy-select" value={buy} onChange={(e) => setBuy(e.target.value)}>
+                    {tokens}
+                </select>
+                <input id="typebuyamount"
+                    type = 'text'
+                    required
+                    value={buyAmount}
+                    onChange={(e)=> setBuyAmount(e.target.value)}
+                />
+            </div>
         </div>
-        
-        <div id="transaction">
-        <label id="exchange-confirmation">Confirmation</label>
-        <p id="sell-output">{sell}</p>
-        {/* <p id="sellPrice">{sellPrice}</p> */}
-        <p id="sellPrice">{sellAmount}</p>
-        <img src={arrow_image} alt="Arrow Image"></img>
-        <p id="buy-output">{buy}</p>
-        {/* <p id="buyPrice">{buyPrice}</p> */}
-        <p id="buyPrice">{buyAmount}</p>
-        </div>
-
         </>
-
     );
 }
 
