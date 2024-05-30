@@ -21,7 +21,7 @@ const Navbar = () => {
         <h1>Jae's Token Exchange</h1>
         <div className="links">
           <Link to="/">
-            <button>Exchange</button>
+            <button>Home</button>
           </Link>
           <button> Send </button>
           <button> Buy </button>

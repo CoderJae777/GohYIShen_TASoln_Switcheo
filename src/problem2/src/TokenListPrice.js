@@ -27,7 +27,7 @@ const TokenPriceList = (props) => {
                 <select id="sell-select" value={sell} onChange={(e) => setSell(e.target.value)}>
                     {tokens}
                 </select>
-                <input id="typesellamount"
+                <input id="inputsellamount"
                     type = 'text'
                     required
                     value={sellAmount}
@@ -50,7 +50,7 @@ const TokenPriceList = (props) => {
                 <select id="buy-select" value={buy} onChange={(e) => setBuy(e.target.value)}>
                     {tokens}
                 </select>
-                <input id="typebuyamount"
+                <input id="inputbuyamount"
                     type = 'text'
                     required
                     value={buyAmount}

@@ -11,14 +11,16 @@ const Home = () => {
       alert("Exchanged Succesful!");
       window.location.reload();
     }
+    const clearHandler = () => {
+      window.location.reload();
+    }
     
     return ( 
         <div className="home">
             <div className="Token">
-              <h1>Exchange</h1>
                 <TokenPriceList/>
+                <button id="clearbutton" onClick={clearHandler}>Clear</button>
                 <button id="exchangebutton" onClick={exchangeHandler}>Exchange!</button>
-
             </div>
         </div>
      );

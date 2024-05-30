@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: monospace;
+  background-color: white;
 }
 
 #sellPrice{
@@ -61,8 +62,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  width:80%
-  
+  width:80%;
+  margin-top: 50px;
 }
 
 #sell-all, #buy-all, #transaction{
@@ -77,14 +78,14 @@ body {
 }
 
 #sell-label {
-  font-size: 35px;
+  font-size: 40px;
   color: #A91D3A;
   font-family: monospace; 
   font-weight: bold;
 }
 
 #buy-label {
-  font-size: 35px;
+  font-size: 40px;
   color: #799351;
   font-family: monospace;
   font-weight: bold;
@@ -117,7 +118,7 @@ body {
   padding: 20px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: auto ;
   background-color: #F5F5F5;
   border-style: solid;
   border-width: 5px;
@@ -135,7 +136,7 @@ body {
 }
 
 .navbar button {
-  width: 170px;
+  width: 200px;
   border-radius: 50px;
   color: #373A40;
   font-family: monospace;
@@ -162,6 +163,32 @@ body {
   border-width: 5px;
   box-sizing: border-box;
   color: #EEEEEE;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 30px;
+  height: 100px;
+  width: 450px;
+  line-height: 20px;
+  margin: 10px;
+  margin-bottom: 40px;
+  padding: 10px 16px;
+  transition: color 100ms;
+  vertical-align: baseline;
+}
+
+#clearbutton:hover {
+  background-color: #EEEEEE;
+  color: black;
+}
+
+#clearbutton {
+  background-color: #F5F5F5;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #EEEEEE ;
+  border-width: 5px;
+  box-sizing: border-box;
+  color: black;
   display: inline-block;
   font-family: monospace;
   font-size: 30px;
@@ -207,23 +234,14 @@ body {
   font-weight: bold;
 }
 
-
-#typebuyamount{
+#inputsellamount , #inputbuyamount{
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
-  font-size: 25px;
-}
-
-#typesellamount{
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-  font-size: 25px;
+  font-size: 30px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
 }
