@@ -33,7 +33,7 @@ After running npm start, access the web app in your browser.
 1. Upon clicking, it redirects users to token exchange page
 2. Users can use the drop down to select the token they wish to exchange to
 3. Users can also key in the amount they wish to exchange
-4. Both information will be reflected in the confirmation portion 
+4. Both information will be reflected in the middle confirmation box 
 
 #### "Send" button (work in progress)
 1. Upon clicking, it redirects users to a send token page 
@@ -53,5 +53,6 @@ After running npm start, access the web app in your browser.
 1. Dropdown for token for Sell and Buy
 2. Selected tokens will be displayed below for confirmation
 3. "Exchange" button triggers a "Exchanged Successful!" alert upon click
+4. Page will refresh after "Exchanged Successful!" alert. 
 
 # Problem 3

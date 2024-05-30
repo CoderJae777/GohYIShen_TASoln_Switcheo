@@ -8,13 +8,14 @@ const Home = () => {
     const [buy, setBuy] = useState('USD');
 
     const exchangeHandler = () => {
-      alert("Exchanged Succesful!")
+      alert("Exchanged Succesful!");
+      window.location.reload();
     }
     
     return ( 
         <div className="home">
             <div className="Token">
-              <h1>Token Exchange</h1>
+              <h1>Exchange</h1>
                 <TokenPriceList/>
                 <button id="exchangebutton" onClick={exchangeHandler}>Exchange!</button>
 

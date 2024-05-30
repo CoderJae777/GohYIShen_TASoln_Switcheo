@@ -15,7 +15,7 @@ const TokenPriceList = (props) => {
     
         <>
         <option>        
-        {tokens.currency}
+            {tokens.currency}
         </option>
         </>    )
         
@@ -36,7 +36,6 @@ const TokenPriceList = (props) => {
             </div>  
 
             <div id="transaction">
-                <label id="exchange-confirmation">Confirmation</label>
                 <p id="sell-output">{sell}</p>
                 {/* <p id="sellPrice">{sellPrice}</p> */}
                 <p id="sellPrice">{sellAmount}</p>
