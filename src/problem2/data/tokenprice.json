@@ -2,7 +2,9 @@
   "tokenPrice":
   [
     {
-      "currency":"Select Token"
+      "currency":"Select Token",
+      "price" : "Price in USD",
+      "date" : "Date"
     },
 
     {
