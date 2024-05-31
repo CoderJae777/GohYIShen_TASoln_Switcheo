@@ -4,7 +4,6 @@ import {useEffect, useState} from "react";
 
 const useFetch = () => {
     const [tokensdata, setTokensData] = useState([]);
-
     useEffect(()=>{
         fetch('http://localhost:8000/tokenPrice')
             // fetch('https://interview.switcheo.com/prices.json') --> Alternatively, use this if dont want use json server
@@ -15,8 +14,6 @@ const useFetch = () => {
                 setTokensData(data);
             })             
         }); 
-
         return{tokensdata}
 }
- 
 export default useFetch;

@@ -1,7 +1,10 @@
+import {useEffect, useState} from "react";
+
 interface WalletBalance {
   currency: string;
   amount: number;
 }
+
 interface FormattedWalletBalance {
   currency: string;
   amount: number;
@@ -15,8 +18,9 @@ class Datasource {
 interface Props extends BoxProps {
 
 }
+
 const WalletPage: React.FC<Props> = (props: Props) => {
-  const { children, ...rest } = props;
+  const {children, ...rest } = props;
   const balances = useWalletBalances();
 	const [prices, setPrices] = useState({});
 

@@ -52,4 +52,9 @@ After running npm start, access the web app in your browser.
 4. Page will refresh after "Exchanged Successful!" alert. 
 5. "Clear" button that will clear all fields by refreshing the page.
 
+### Areas for improvement
+
+1. Backend --> retrieval of prices and calculations
+2. Wallet balance hiding button function is not yet functional
+
 # Problem 3
