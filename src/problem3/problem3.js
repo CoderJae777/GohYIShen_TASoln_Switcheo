@@ -23,10 +23,6 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = require("react");
-{
-    currency: string;
-    amount: number;
-}
 var Datasource = /** @class */ (function () {
     function Datasource() {
     }
