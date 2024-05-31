@@ -58,3 +58,4 @@ After running npm start, access the web app in your browser.
 2. Wallet balance hiding button function is not yet functional
 
 # Problem 3
+This challenge is beyond me at the moment :( 
