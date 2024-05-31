@@ -12,6 +12,7 @@ const Home = () => {
       window.location.reload();
     }
     const clearHandler = () => {
+      alert("Cleared all fields!")
       window.location.reload();
     }
     

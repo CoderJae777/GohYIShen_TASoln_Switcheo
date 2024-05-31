@@ -3,6 +3,7 @@ import Home from './Home';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import ViewTokenDetails from './ViewTokenDetails';
+import Send from './Send';
 
 // Json server
 // http://localhost:8000/tokenPrice
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/ViewTokenDetails">
             <ViewTokenDetails />
+          </Route>
+          <Route path ="/Send">
+            <Send/>
           </Route>
         </Switch>
       </div>

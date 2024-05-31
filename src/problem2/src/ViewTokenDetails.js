@@ -2,8 +2,8 @@ import {useEffect, useState} from "react";
 import useFetch from "./useFetch";
 
 const ViewTokenDetails = () => {
-    const {tokenPrice} = useFetch();
-    const tokens = tokenPrice.map((tokens)=>
+    const {tokensdata} = useFetch();
+    const tokens = tokensdata.map((tokens)=>
         <>
         <div id="viewtokendeetsdiv">
             <p id="viewtokendeetstoken">{tokens.currency}</p>

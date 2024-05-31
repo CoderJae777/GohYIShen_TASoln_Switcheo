@@ -21,12 +21,13 @@ const Navbar = () => {
         <h1>Jae's Token Exchange</h1>
         <div className="links">
           <Link to="/">
-            <button>Home</button>
+            <button>Buy.Sell.Exchange</button>
           </Link>
-          <button> Send </button>
-          <button> Buy </button>
+          <Link to ='/Send'>
+            <button> Send Tokens </button>
+          </Link>
           <Link to="/ViewTokenDetails">
-            <button>Details</button>
+            <button>Token Details</button>
           </Link>
           <button onClick={handleClickAboutMe}>About me</button>
 

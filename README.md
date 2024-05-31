@@ -31,9 +31,6 @@ After running npm start, access the web app in your browser.
 
 #### "Exchange" button 
 1. Upon clicking, it redirects users to token exchange page
-2. Users can use the drop down to select the token they wish to exchange to
-3. Users can also key in the amount they wish to exchange
-4. Both information will be reflected in the middle confirmation box 
 
 #### "Send" button (work in progress)
 1. Upon clicking, it redirects users to a send token page 
@@ -45,7 +42,6 @@ After running npm start, access the web app in your browser.
 1. Upon clicking, an alert will pop up that informs users that we are redirecting to another page (My LinkedIn hahaha)
 
 #### "Token Details" button
-
 1. Upon clicking, it redirects users to another page that displays all the token data from the JSON file 
 
 ### Currency Exchange Form
@@ -54,5 +50,6 @@ After running npm start, access the web app in your browser.
 2. Selected tokens will be displayed below for confirmation
 3. "Exchange" button triggers a "Exchanged Successful!" alert upon click
 4. Page will refresh after "Exchanged Successful!" alert. 
+5. "Clear" button that will clear all fields by refreshing the page.
 
 # Problem 3
